@@ -1,0 +1,17 @@
+.link {
+  &__nav {
+    font-size: $font-body-2;
+    font-weight: $font-weight-semibold;
+    color: $color-black;
+  }
+
+  &__footer {
+    font-size: $font-label-2;
+    font-weight: $font-weight-semibold;
+    color: $color-white;
+  }
+
+  &__mobile {
+    margin-right: 2rem;
+  }
+}

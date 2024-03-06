@@ -1,0 +1,23 @@
+.btn {
+  outline-color: transparent;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: all 0.2s;
+  padding: $button-primary-paddings;
+
+  &__primary {
+    background-color: $primary;
+    color: $color-white;
+
+    &:hover {
+      background-color: $primary-dark;
+    }
+  }
+
+  &:disabled {
+    background-color: $color-gray;
+    color: $color-white;
+    cursor: not-allowed;
+  }
+}

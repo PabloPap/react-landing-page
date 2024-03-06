@@ -1,0 +1,152 @@
+.main {
+  display: flex;
+  flex-direction: column;
+
+  .achievement {
+    background-color: $primary;
+
+    p {
+      font-size: $font-body-2;
+      color: $color-white;
+      margin: 0 auto;
+      line-height: 36px;
+      max-width: 35rem;
+      text-align: center;
+      padding: 2rem 0;
+
+      @media (max-width: 600px) {
+        padding: 2rem;
+      }
+    }
+  }
+
+  .mainTitle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 6rem 0;
+
+    @media (max-width: 600px) {
+      padding: 6rem 1rem;
+      text-align: center;
+    }
+
+    h2 {
+      font-size: $font-header-1;
+
+      @media (max-width: 600px) {
+        font-size: $font-body-1;
+      }
+    }
+
+    p {
+      font-size: $font-body-2;
+
+      @media (max-width: 600px) {
+        font-size: $font-label-2;
+      }
+    }
+  }
+
+  .mainServices {
+    &__scrollable {
+      display: flex;
+      overflow-x: auto;
+      white-space: nowrap;
+      justify-content: space-around;
+
+      @media (max-width: 600px) {
+        justify-content: flex-start;
+        overflow-x: scroll;
+        -webkit-overflow-scrolling: touch; /* Enable smooth scrolling on iOS */
+      }
+    }
+
+    &__card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      flex: 0 0 auto;
+
+      @media (max-width: 600px) {
+        margin-right: 4rem;
+        margin-bottom: 1rem;
+      }
+
+      img {
+        margin-bottom: 1.5rem;
+      }
+
+      p {
+        font-size: $font-body-2;
+        text-align: center;
+        line-height: 36px;
+      }
+
+      span {
+        color: $primary;
+      }
+    }
+  }
+
+  .mainGallery {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10rem;
+    gap: 7rem;
+
+    &__description {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-direction: row;
+
+      @media (max-width: 600px) {
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+
+      @media (max-width: 600px) {
+        display: flex;
+        flex-direction: column;
+      }
+
+      &--content {
+        h2 {
+          font-size: $font-header-2;
+          margin-top: 0;
+
+          @media (max-width: 600px) {
+            font-size: $font-header-mobile-2;
+          }
+        }
+
+        p {
+          font-size: $font-body-2;
+          line-height: 30px;
+          margin-top: 1rem;
+          width: 30rem;
+
+          @media (max-width: 600px) {
+            width: 20rem;
+            font-size: $font-body-mobile-2;
+          }
+        }
+
+        margin-top: 0;
+        @media (max-width: 600px) {
+          margin-top: 2rem;
+        }
+      }
+    }
+
+    @media (max-width: 600px) {
+      .reverse {
+        flex-direction: column-reverse;
+      }
+    }
+  }
+}

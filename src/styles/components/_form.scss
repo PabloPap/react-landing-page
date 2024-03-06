@@ -1,0 +1,39 @@
+.emailForm {
+  position: relative;
+  width: 25rem;
+  border-radius: 5px;
+  padding: 5px;
+
+  @media (max-width: 600px) {
+    width: 22rem;
+  }
+
+  input {
+    width: 100%;
+    border: none;
+    border-radius: 4px;
+    outline: none;
+    padding: 18px 0;
+    padding-left: 10px;
+
+    &::placeholder {
+      font-size: $font-lebel-1;
+
+      @media (max-width: 600px) {
+        font-size: $font-lebel-mobile1;
+      }
+    }
+  }
+
+  button {
+    position: absolute;
+    top: 9px;
+    right: 10px;
+    font-size: $font-lebel-1;
+    font-weight: $font-weight-semibold;
+
+    @media (max-width: 600px) {
+      font-size: $font-lebel-mobile1;
+    }
+  }
+}
